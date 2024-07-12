@@ -1,0 +1,37 @@
+<div class="form-container">
+  <form ngForm>
+    <div> <h4>Delete Course</h4></div><br>
+    <div class="form-group">
+      <label for="courseId">Course Id</label>
+      <input type="text" class="form-control" id="courseId" [(ngModel)]="model.courseId" name="courseId">
+    </div>
+
+    <div class="form-group">
+      <label for="courseName">Course Name</label>
+      <input type="text" class="form-control" id="courseName" [(ngModel)]="model.courseName" name="courseName">
+    </div> 
+
+    <div class = "form-button">
+      
+      <button type="button" class="btn btn-success" (click)="deleteCourse()">Submit</button>
+    </div>
+    
+    <div class="alert alert-success alert-dismissible" role="alert"  *ngIf=msg>
+        <span type="button" class="close" data-bs-dismiss="alert" aria-label="Close" on-click="closeAlert()"><span aria-hidden="true">&times;</span></span>
+        <strong>Success! </strong>{{message.message}}!!
+      </div>
+    
+  </form>
+</div>
+
+
+
+<div>
+  <ol>
+    <!-- <li appHighlightDierctive value="yellow" *ngFor='let course of courseArray index as i'>
+                {{course.courseName}} <b>||</b> {{course.courseAvailable}}| 
+            <button (click) = "deleteCustomer(cust, i)">delete</button>
+             </li> -->
+  </ol>
+
+</div>

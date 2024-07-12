@@ -1,0 +1,691 @@
+Spring Project/ Microservice Dev. :--> 
+
+1. Java 11/16/17  Preferable :-- Spring 5 Latest(Spring 5 are using the latest
+     feature of Java 11/16/17). 
+
+2. STS (Spring Tool Suits). / InjelliJ / Eclipse / JDev.
+
+3. MySQL 8.0 with work beanch. 
+
+4. Open Internet Connection 
+
+5. All Major browesrs :--> edge / Chrome 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ Spring 5 :- Java 11/ 16/17 features are extensively used ! 
+
+
+Java 11/16/17 new feature included :--> 
+
+1. Default method in Interface 
+
+   1.1 default method is created using the default keyword in java. 
+   1.2 the use of default method in java 11 onwards which can be use in various
+       classes after without implementation in code. 
+`  1.3 its help to the developer to remove the repeatation of the code in java 
+       & improve the performance in code  
+
+2. For Each Loop
+
+ Generally we used basic 3 types of loop for iterate the Collection. 
+
+   1. for loop  2. do while 3. while . 
+
+ Note :--> onwards java 8 , new loop added in Java Implementation :-> 
+  
+   for each :-- Extended from the Javascript & its quite fast as comparsiuon 
+   to others Loops 
+ 
+3. Stream API 
+
+  3.1 Generally java support the OO based Approach but now a days onwards java 8 
+ supporting the functional Orinted Approch in Code :--> 
+
+    1. output of one function would be the input of next function 
+
+      func1().func2().func3().func4()
+
+    output of one function func1():--> output--> input of---> func2()
+
+  
+    2. Stream API is wrapper on collection in java 
+
+    3. use of Stream API in java for manuplutation the collection/ Filterization etc.
+
+
+
+4. Date & Time API 
+
+    New package is added in the Java API :-- java.time.* which contains various readymade 
+    methods for date/ Time/year/week model manuplutation .
+
+
+5. Lambda EXpression 
+6. Java Tools For Performance Monitioring/ Documentation
+ 
+  Link :- For your Refernece
+
+ For Refernece :--> some Java 11 tools are avaliable for project Docs creation 
+as well as for performnce as well
+
+
+ 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Spring 5 :-- 
+
+1.Core Discussion & Spring Extension with Gradle / Maven 
+2. DI / IOC/ look up the Spring XML configuration file 
+3. convert the Anootation based Approach. 
+4. All Spring Annotation's based approach used in Spring Web/MVC/ REST Impl 
+5. Use Case / user Stories 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ Core Spring :--> 
+
+1. Spring is the Enterpriser Framework which provide complete E2E Enterprise 
+ solution 
+
+2. Under the hood Spring umbrella , There are various module of Spring :-> 
+
+  1. Core Spring 
+  2. Spring MVC 
+  3. Spring Rest 
+  4. Spring Auth
+  5. Spring JTA 
+  6. Spring MQ 
+  7. Spring JPA / ORM 
+  8. Spring Integration with ApAche Camel..   etc. 
+  9. Spring Microservice :--> NetFlex OSS Arch. 
+ 
+
+3. Now a days , We are using Spring 5 with Spring Boot 2x(Spring 4) / 3x (Spring 5x) version for Development. 
+
+                   Spring DEV :-- > Spring Core (With Other Module) + Spring Boot
+
+4. For Spring 5 // Supporting version of Java/ Recommended Version 11/16/17. 
+
+5. We use project build tool for Spring Development :-- 5.1 Maven  5.2 Gradel. 
+
+ Reference :--> 
+
+1. https://docs.spring.io/spring-framework/reference/core/beans.html
+2. https://www.oodesign.com/
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+6. Using Application Context We can refer the Bean (Java Class). These Beans 
+are POJO Object in Spring & managed by the Spring Conatiner (Life Cycel Mgmt).
+
+
+  Spring Core:-- >  Core.jar(IOC/DI) + bean.jar(Complete Bean(java Class)) + expression.jar(SPEL) + context.jar(ApplicationContext)
+
+
+
+7. Various Annotation used by Spring Enterprise Impl :--> 
+
+   7.1 :-- @SpringBootApp :-- This is the Entry point of Spring App 
+   7.2 :-- @Bean :-- its represent the PoJO class 
+   7.3 :--@import :--> this is using to import the package & Configuration File 
+   7.4 :-- @Configuration :-- this annotation help to create the Configuration & refer 
+     this Config file in Application Context . 
+   7.5 :-- @EnableAutoConfiguration :-- This annotation help to wired the other spring 
+   internal Module in Development. 
+
+
+++++++++++++++++ 
+
+   Assignment :--> 1 
+
+    Create the one more package com.boa.model--- Customer Model with properties 
+
+     customerID
+     customerName
+     customerAddress
+     // setter getter 
+
+   Addone :-- In the Service Package crerate the Customer Interface & CustomerImpl with 
+   CURD operation with Array & using lambda foreach Iteration etc. Then get the refernce 
+   of Cutomer Bean in Application Context  :-- 15 Min 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Note :-- 1.1 For WEb BAsed Development we use in Spring MVC :---> SPRING REST Impl which is based on 
+         Request & Responce Model :--> 
+         1.2 We Must Enable @EnableWEbMVC for RESTFul Development. 
+         1.3 Various Annotation are used as Stgeriotype for Spring WEB API based impl as mentioned 
+             below:-->
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+In Rough page/ doc :--> create the Skt of the project as mentioned below the 
+possible Class:--> 
+
+  1. com.boa.bo  / VO/ Entity/ Model
+  2. com.boa.business
+  3. com.boa.reposatory
+  4. com.boa.controller 
+  5. com.boa.utils 
+  6. com.boa.validator
+  7. com.boa.constant 
+  8. com.boa.exception
+
+Task :-- Identified the possible Entities / Posssilbe business class with Interface 
+// possible DAO class / possible Constants  
+++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+
+
+
+
+
+
+   7.6 others SterioType Annotation :--> 
+
+       1. @Component :-- its represent the Spring Compomnent/ class 
+       2. @service :-- its represent the Spring services for Look up tyhe DAO 
+       3. @Reposatory :--> its Reprresemnt the Spring DAO class's   :-- TX part with JPA
+       4. @Controller :--> its use in MVC / For REST :---@RestController 
+    
+  7.7: -- @Autowire :=--- this annotation helping us to do the DI (@injection) in the 
+    classes as dependencies 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+  Demo 1 :-- Share the Problem Statement CRS Ststem with Use case 
+  Demo 2 SEt of the REST Impl in Machine for REST API development 
+
+   
+  
+
+Demo 1 :--> Setup of Spring Boot APP with Core Spring Capabilities  // DEmo of Service Creation & lookup with AppContext
+          // Understant all the Spring jars 
+
+Demo 2 :-- Assignmet 1 
+
+
+    Add on :-- Add on the Customer Service with bean setter getter & implment the CustomerService Impl with 
+           all method :--> 
+           1. CreateCustomer()  :--- collection.add() //
+           2. UpdateCustomer(int customerID) :-- replace the value
+           3. listCustomer() :-- foreach loop for iterate  :--  for each loop 
+           4. deleteCustomer(int id)  :--- collection.remove()
+
+            use Array or ArrayList() collection to imlement it ! 
+
+  Time :-- 20 min
+
+  Add On :=-- Create the separate Configuration file :-- HelloWorlConfig  // CustomerConfig  :--> 
+
+    import :-- both the File in AppConfig :-- refer in the Spring Boot APP. 
+
+10 Min :--
+
+
+Demo 3 :-- Shared you the USe case of SRS project with Complete use case 
+
+Demo 4 :-- Setting up the REST Demo of Spring 
+
+Assignment :-- Transform the respective uses case the Project Skt.
+
+
+ Sharp :-- 2.00 P.M ramp up the session 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+  core java class's :--> POJO :--> bean :-- Spring beans :-- @Bean :-- Annotation 
+
+  <bean> </bean> :-- XML config 
+
+@Bean :--> service :-- @Service :-- DAO :-- @Reposatory :--> Servlet :-->   
+  @Contoller :--> 
+
+   
++++++++++++++++++++++++++++++++++++
+
+Maven :-- Project :-- pom.xml :--- Dependencies :-- mvn intall :-- mvn clean 
+ 
+++++++++++++++++++++++++
+
+Spring 5 :-- Spring Boot +                      Core Spring 
+           (Managing the Complete             (Help to write the POJO/Beans in spring)
+        project Life Cycle :-- build / depoly/ monitor/helath/ test)
+
+
+POJO :-- Plain java Object classs/ Business Classes/ ORM Classs/ Helper etc.
+
++++++++++++++++++++++++++++++++++
+
+Demo1 :-- Basic Demo of Look up service using Spring Application Context . 
+
+Assignment  1.:--> Create the Customer bean & some Service method :-- 
+
+ 1. Customer bean :--- com.boa.bean 
+ 2. CustomerInterface :-- create all 4 methods 
+ 3. CustomerServiceImpl :-- Implement all method using ArrayList collection =. 
+
+
+
+    1. addCustomer :--> collection of ArryList using Add method
+    2. deleteCustomer:--> use the collection remove method 
+    3. listCustomer :--> foreach to iterate the customer 
+    4. updateCustomer :--> the replace the Pbject in Collection after find 
+
+
+Note :-- configure this class in AppConfig & look all method in SpringBoot Client 
+
+05 to 10 min more  complete it quick
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Today's Agenda :-->
+
+1. Multiple Configuration File in Spring ! with various Module 
+2. Bean Scope in spring 
+3. Database Configuration with JDBC Template  (MY SQL intallation)
+4. Transaction in JDBC with Spring Container 
+5. Use case with problem statement (UML Artifacts)
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Java :-- > 
+
+  Class A            Class B
+                    A a=new A(); :--> Developer Specific Approach
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ IOC :---- DI :-- Depndency Injection :---> 
+
+
+  Three Ways :--> 
+
+  1. setter Injection 
+  2. Constuction Injection 
+  3. @Autowire 
+   
+
+
+Note:-- 
+
+`@Bean Scope :-->
+ 
+1.in Spring by default the Scope is Singltgon which dont required mention @ Class Level
+2.if we want create the scope prototype then define with @Bean(scope="prototype") ..then spring 
+  container allow to create the multiple object. 
+
+
+++++++++++++++++++++++++++++++++++++++++
+
+ Customer Modeule :-- with collection :-->   Back End data integration with JDBC :--> 
+
+
+JDBC (Core Java ) :---> 
+
+Spring are using 2 important API with Database Intraction with Some Transaction Mgmt (Container Specific). 
+
+   1. JDBCTemplate   :--- Focus 
+   2. JPA (Hibernate) :-- later we will convert the Application Database intraction with JPA. 
+
+Demo 1 :-->  Setup of database 
+Demo 2 :-- Complete end to end Demo of JDBCTemplate with Transaction in Spring Container . 
+
+
+ Note :-- Cross Check the MYSQL 8. Database in Machine  
+          cross Check the workbanch in your machhine. 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Assignment 3 :-->  Crearte the Skt. of Spring-CRS-Project in Sprint boot with the following structure :--> 
+
+                com.bao-crs.client 
+                com.bao.crs.bean
+                com.bao.crs.service
+                com.bao.crs.dao
+                com.bao.crs.contants
+                com.bao.crs.cofig
+
+deing all the class's :-- bean/ servie/ dao/ configuration based on the proeject statement with UML Artifacts ! 
+
+
+Group A 
+
+umar 
+sapna
+Mayuri
+Keerthi
+Arthi
+Huma
+Gayatri
+
+Group B 
+
+
+Arjun 
+Amit Kholi
+MOganapriya
+Nikita sharma
+Harish 
+L Urvashi
+Abshishek
+
+Group C 
+
+prabha
+prashad
+Anisha
+Karthicvel MV
+Senthil
+Pradeep kumar
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Recents Status :--> 
+  getBean(@Autowire)                    @Autowire DAO
+ Clinet -------------. service ------------> DAO ---> connection ---> DB  (Spring with JDBCTemplate with Transactions)
+
+POS :-- developed :-- Soem  services 
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Task 1:--.
+ We will make our application REST Enable  
+
+Task 2:-- share you the solution of other service in which you guys migirate in your existing app
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+1. In Spring , We can develop the 2 type of web services :--> 
+
+   1.1 SOAP Web Service 
+   1.2 REST Web Service 
+
+2. Spring internally used the JAX-RS API for REST based implementation. 
+
+3. REST is the Arch in which the Spring REST service supports various MIME :--(Responce Format)
+ 
+     3.1 XML 
+     3.2 JSON :-- preferable 
+     3.3 TXT
+     3.4 HTML
+4. In Rest Implementation, we used various annotations :--> 
+
+  @GETMapping :-- GET method :-- Fetch details 
+  @POSTMapping :-- POST methods :-- create the details 
+  @PUTMapping :--- PUT methods :-- update 
+  @DELETEMapping :--> Delete Methods :-- Delete the data 
+
+ Note :-- Onwards spring 4 , the all annotation are migirated in @RequestMapping 
+
+5. Varios Responce code generated wheh we use the REST impl :-> 
+
+https://www.restapitutorial.com/httpstatuscodes.html 
+
+
+
+6. In Rest Implementation , we use the various annotation :--> 
+
+   1. @RESTController :-->  REST Layer   :-->   REST Layer 
+   2. @Service :-->   Represent the Service layer :--- Serive 
+   3. @Reposatory :--> DAO Layer  :--- DAO 
+   4. @ExceptionHandler :--> use map the custom exceptions :-- Custom Exception 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ Demo 1 of REST IMPL :-- 1.   Model or bean / contoller / App (Hard coded data) 
+
+
+  MYSQL 8 with work banch 8x.
+
+
+
+Assignment :-- Desing the Table Structure based on the CRS project or Entities ! 
+
+  Discuss with your team & create the database 
+
+  30 Min !
+
+
+ Demo 2 of JPA / REST :-- CURD operation :-- 2
+
+ Demo 3 Database Setup :-- MYSQL 8 free Open Source 
+
+ Project Assignment .
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Agenda Today :--> 
+
+  1. Demo of REST with JPA ADvanced spring Data 
+
+   1.2 In the Existing Project just implete all the Service with JPA with Restcontroller of CRS 
+    1 Hr.  
+  2. Add the Swagger to Expose the API with Beautiful Docs 
+
+   Swagger is a extension to show the beautiful docs or Expose the API :-> 
+
+     before Spring 4 :-- Swagger API extension 
+     onwards Spring 5 :-- We use OPEN API 
+
+
+  3. NetFlex OOS Arch Discussion to get convert the Existing REST Project in Microservice
+
+
+      CRS Project :-->   Separeate All Small Project :-- 1. PaymentCRSProject (M1) 
+                                                         2. UserCRSProject (M2)     + NetFlex OSS (Arch) (Which contains
+                                                                                      various components)
+                                                         3. REportCRSPriject (M3)
+                                                         4. CourseCRSProject (M4)
+
+
+    Each Project :-- >  Name Convention :-->   PaymentCRSProducer   :--> 
+                                               UserCRSProducer 
+                                               ReportCRSProducer
+                                               CourseCRSProducer
+
+
+                       REST :--> JAX-RS:-- Restfull Arch :--> HTTP +URL/URI :--> MIME :-- XML/JSON/TXT/HTML :--> REF API :-> 
+                                        produce / Consume :-> JAVA----Marsall --> JSON  :-- Jersey API MediaTYPE used it
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+  4. Write the Eureka code & register with Discovery with Eureka of all Microservice Comp Impl 
+ 
+
+
+ Assignemnt 6:-->
+
+ 5. Assignment to Transform the Complete code of Exiting REST Poject & convert Micro service 
+     component & register in Eureka Netflix Cloud . 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ Evolution of Database Intraction with Spring Container :--> 
+
+  JDBC :-----> JDBCTemplate :----> ORM (Object Relationship Mapping) JPA/ Hibernate 
+
+
+
+
+
+
+
+
+ Demo 1 :-- Basic Demo to get create the REST service 
+ Demo 2:--> Complex Demo :--> CURD customer operation using Spring 
+
+Assignment :-> Start work to transform the project for Spring REST impl with JDBCTemplate @lease one service u developed
+
+
+Note :-> complete code of the Project in which start migration of your CRS application 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Assignment 4 :--- In the Existing project CRS // whatever service your team has completed .. migrate in the REST 
+ project :--- Spring-REST-CRS-Project . 
+
+30 min 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Today's Agenda :--> 
+
+1. Introduction of JPA 
+2. JPA Repo Interface 
+3. Integration with Spring REST with JPA                >:---- Assignment 5
+4. Introduction Microservice // Netflex OSS Arch. 
+5. Component of NEtFlex OSS 
+6. Eureka server & Registration of Microservice in Eureka :--- Assignment 6
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Arch of The Project :--> 
+
+
+    HttpClient(Browser / UI/UX) :---- REST Layer ----> Service Layer :-----> DAO Layer :---DB 
+
+
+                                                                           Issue of DAO :--> 1. its Developer Specfic Approch
+                                                                                             2. Lot of code for perform/manuplutation the DB 
+                                                                                             3. Performance issue 
+                                                                                             4. Code is Not Concise 
+                                                                                             5. Lack of Best practices 
+
+
+   Evolution of DBintraction :-->
+
+     JDBC :----> JDBC Template :---> JPA / HIbernate 
+
+  some important things about the JPA :--> 
+
+1. JPA proviodes the Mechanism for managing the persistence & object Relational mapping 
+ 
+2. its a independent container which is managing lot of overheads from developer side like :-- Connection mgmt/ persistance
+    / Connection pooling / Error handling / Transactions etc. 
+
+3. We use various annotations for enable the JPA container include some more annotations 
+
+    1. @EnableJPARepositories 
+    2. @Entity  :--- @Id/ @Table / @column /@GeneratedValue etc. 
+   
+
+4. Lot of code is abstracted rather than writng the code from developer side 
+
+5. persistance approach is container specific then its make task easy and reped developent 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Today's Agenda :--> 
+
+1. Introduction of Spring Microservice 
+2. Microservice Arch. 
+3. NextFlex OSS Arch for Spring Microservice Dev. 
+4. Components of Microservice 
+5. Configuration of Eureka Server for Microservice Registration/ Discovery 
+6. Producer / Consumer 
+7. Ribbon // Zulith etc. 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+ Component Oriented Arch:-----> SOA Arch-----> REST ARch (CLoud Arch)--(Microservice ARch.)
+
+Note :-- Spring are using NetFlex OSS Arch for Microservice Development in which there 
+are various Components :-- Eureka Server // Ribbon // Histrex for Mornitoring etc. 
+
+
+In this we basically work Producer / Consumer Model in Distrubuted Env . 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ Demo 1 :-- Using NetFlex OSS :--- > Configure the Eureka Server // We will create
+separarte Micoservice as Producer & Register / Discovery by call up the Client . 
+
+ Demo 2 :-- Using NetFlex OSS :--> Create the Consumer using RestTemplate which 
+is also using inter communication b/w the Micoservice & register the Eureka server 
+
+ Demo3 :-- Load balancing using Ribbon in the Same project //
+
+ Reference :-- will give you as material 
+
+
+
+
+amitsinghkohli@gmail.com
+from Pradeepkumar Gediya to everyone:    5:47 PM
+pradeep.gediya02@gmail.com
+from Umar Faroock to everyone:    5:47 PM
+ufzaan@gmail.com
+
+
+
+email :-- amitkr.balyan@gmail.com
+mob no :-- 8126688804
+
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+Todays Agenda :--> 
+
+ 1. Advanced JPQL query for your reference & code 
+ 2. Zuul as API Gateway in microserve (in Spring 5/6) :--   Spring Cloud Gateway
+   
+    Assignment :-- To define the BOA API Gateway & route the All Microserve by the Single End Point 
+
+
+  Assignment :-- In the CRS project Register all Sevice in Eureka with Discovery & create the Cloud API 
+                 Gateway to route all the Request to access various End Point 
+
+   25 Min :-- DOne
+
+ 3. Incommunication about the Micoservice with create the Cunsumer / (Other Microservice) :-- Producers 
+ 4. Circet breaker refernece Code if any fall Back 
+ 5. Testing the Micoservice JUNIT or Mokicto 
+    Ref :-- GET / POST /PUT / DELETE 
+
+   JUNIT :--- Actual / Expected /// TEst Case // @TEST Annotation 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Tommarow :--> 
+
+ 1. Security with OAuth with JWT 
+     
+     1.Intitial Security with the Social Media Account 
+     2. JWT Classic Token to secure the Micoservice End point 
+2. Asyc Coomunication or Streaming   // Kafka / RabbitMQ    
+3. Develop the Microservice using Kafka 
+4. Reference Project // Auth. Material 
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ 30 Min To complete the FLow of APP ! by 4.10 will review the code !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+    

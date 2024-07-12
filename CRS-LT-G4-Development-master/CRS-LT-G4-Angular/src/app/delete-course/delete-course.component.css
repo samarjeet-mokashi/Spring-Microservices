@@ -1,0 +1,53 @@
+.form-group{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: black;
+    font-weight: bold;
+    font-family: Georgia, serif ;
+    font-size: 1.2rem;
+    /* text-align: center; */
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    height: 24rem;
+    /* background: cadetblue; */
+}
+.form-control{
+    width: 20rem;
+}
+h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Georgia, serif ;
+    font-weight: bold;
+}
+label{
+    margin-right: 6rem;
+} 
+.form-radio{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: aliceblue;
+    font-family: Georgia, serif ;
+}
+form{
+    border: 2px solid;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff66;
+    border-radius: 2rem;
+    color: black;
+    flex-direction: column;
+}
+.form-button{
+    display: flex;
+    width: 100%;
+    gap: 1rem;
+    justify-content: center; 
+}
